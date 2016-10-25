@@ -1,6 +1,7 @@
 var builder = require('botbuilder');
 var restify = require('restify');
 var weatherClient = require('./wunderground');
+var http = require('http');
 
 //=========================================================
 // Bot Setup
@@ -14,8 +15,9 @@ server.listen(process.env.port || process.env.PORT || 3978, function () {
 
 // Create chat bot
 var connector = new builder.ChatConnector({
-    appId: 14273188-cae6-4979-a5bc-48ce7552d7d1,
-    appPassword: NMASndoeSt3fqG9bxqVsoUT
+    var myAppId = process.env.MY_APP_ID || "Missing your app ID";
+    var myAppSecret = process.env.MY_APP_SECRET || "Missing your app secret";
+
 });
 var bot = new builder.UniversalBot(connector);
 server.post('/api/messages', connector.listen());

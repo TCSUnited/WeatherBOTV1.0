@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SarahSexton/slackweather.git"
+    "url": "git+https://github.com/TCSUnited/WeatherBOTV1.0.git"
   },
-  "author": "Sarah Sexton",
+  "author": "TCS",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SarahSexton/slackweather/issues"
+    "url": "https://github.com/TCSUnited/WeatherBOTV1.0/issues"
   },
-  "homepage": "https://github.com/SarahSexton/slackweather#readme",
+  "homepage": "https://github.com/TCSUnited/WeatherBOTV1.0/WeatherBOTV1.0#readme",
   "dependencies": {
     "botbuilder": "^1.0.0",
     "http": "0.0.0",
